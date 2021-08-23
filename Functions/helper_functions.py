@@ -2,7 +2,8 @@ import pandas as pd
 import openpyxl
 from datetime import datetime, timedelta
 import numpy as np
-
+import os 
+from sklearn.metrics import mean_squared_error, mean_absolute_error
 pd.options.mode.chained_assignment = None  # default='warn'
 
 def integer2date(s):
@@ -49,3 +50,8 @@ def write_results(path, sheet, df):
 
     writer.save()
     writer.close()
+    
+
+def show_evaluation(pred, true):
+    print(f'RMSE score: {mean_squared_error(true.values, pred, squared=False)}')
+    print(f'MAE score: {mean_absolute_error(true.values, pred)}')
