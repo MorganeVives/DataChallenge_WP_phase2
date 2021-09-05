@@ -1,0 +1,34 @@
+params_lgbm_1 = {'reg_alpha': 0.25020407037516895, 'reg_lambda': 7.183180037262842, 'colsample_bytree': 1.0, 'subsample': 1.0, 'learning_rate': 0.11751089382716717, 'max_depth': 84, 'num_leaves': 596, 'min_child_samples': 15}
+params_xgb_1 = {'lambda': 0.3643806022565838, 'alpha': 0.003650309466012506, 'colsample_bytree': 0.9640425007241273, 'subsample': 0.8, 'learning_rate': 0.052762727588106954, 'n_estimators': 700, 'max_depth': 54, 'min_child_weight': 96, 'eta': 3.119364108002744e-05, 'gamma': 5.177778739056542e-05, 'grow_policy': 'lossguide'}
+params_lgbm_1_bis = {'reg_alpha': 0.8314449043001416, 'reg_lambda': 9.093012403173608, 'colsample_bytree': 0.9, 'subsample': 0.4, 'learning_rate': 0.2033256175102991, 'max_depth': 55, 'num_leaves': 964, 'min_child_samples': 25}
+params_xbg_1_bis = {'lambda': 2.1359622347936646, 'alpha': 0.016202766042783825, 'colsample_bytree': 0.8075360516891219, 'subsample': 0.8, 'learning_rate': 0.06792370224097045, 'n_estimators': 320, 'max_depth': 58, 'min_child_weight': 102, 'eta': 6.934521001624072e-05, 'gamma': 4.369012735807193e-06, 'grow_policy': 'lossguide'}
+
+params_lgbm_2 = {'reg_alpha': 0.18268883436586145, 'reg_lambda': 0.15916821051528962, 'colsample_bytree': 1.0, 'subsample': 0.6, 'learning_rate': 0.18007000714755378, 'max_depth': 77, 'num_leaves': 425, 'min_child_samples': 10, 'min_data_per_groups': 19}
+params_xgb_2 = {'lambda': 0.005195058020286749, 'alpha': 0.15427340616771562, 'colsample_bytree': 0.4794118698886291, 'subsample': 0.7, 'learning_rate': 0.13969003989794868, 'n_estimators': 583, 'max_depth': 20, 'min_child_weight': 81, 'eta': 0.0006994052800675432, 'gamma': 4.0927842177131904e-08, 'grow_policy': 'depthwise'}
+params_lgbm_2_bis = {'reg_alpha': 0.34026994469471555, 'reg_lambda': 1.1032197453137866, 'colsample_bytree': 0.9, 'subsample': 0.6, 'learning_rate': 0.13414826176962302, 'max_depth': 81, 'num_leaves': 987, 'min_child_samples': 39}
+params_xgb_2_bis = {'lambda': 4.982427302967441, 'alpha': 0.023879453147379343, 'colsample_bytree': 0.29850970311481473, 'subsample': 0.7, 'learning_rate': 0.07986759823219342, 'n_estimators': 634, 'max_depth': 52, 'min_child_weight': 142, 'eta': 0.9698508070965183, 'gamma': 6.168834828494383e-06, 'grow_policy': 'depthwise'}
+
+params_lgbm_3 = {'reg_alpha': 0.2380367567801365, 'reg_lambda': 0.005052844767806766, 'colsample_bytree': 0.9, 'subsample': 0.5, 'learning_rate': 0.11958787026894079, 'max_depth': 41, 'num_leaves': 690}
+params_xgb_3 = {'lambda': 0.018191871915246106, 'alpha': 0.2397827070234125, 'colsample_bytree': 0.4710946041352672, 'subsample': 0.8, 'learning_rate': 0.14812785561924302, 'n_estimators': 688, 'max_depth': 32, 'min_child_weight': 218, 'eta': 6.950960910550952e-08, 'gamma': 2.0149702062428016e-07, 'grow_policy': 'lossguide'}
+params_lgbm_3_bis = {'reg_alpha': 0.26013926149282945, 'reg_lambda': 0.002325658512162904, 'colsample_bytree': 1.0, 'subsample': 0.7, 'learning_rate': 0.10619054458258967, 'max_depth': 83, 'num_leaves': 647, 'min_child_samples': 3}
+params_xgb_3_bis = {'lambda': 0.018191871915246106, 'alpha': 0.2397827070234125, 'colsample_bytree': 0.4710946041352672, 'subsample': 0.9, 'learning_rate': 0.11812785561924302, 'n_estimators': 400, 'max_depth': 28, 'min_child_weight': 220, 'eta': 6.950960910550952e-08, 'gamma': 2.0149702062428016e-07, 'grow_policy': 'lossguide'}
+
+params_lgbm_4 = {'reg_alpha': 0.08714703614419553, 'reg_lambda': 9.983645262139024, 'colsample_bytree': 0.9, 'subsample': 0.8, 'learning_rate': 0.13413154768816146, 'max_depth': 41, 'num_leaves': 613, 'min_child_samples': 15}
+params_xgb_4 = {'lambda': 0.13763482520556616, 'alpha': 0.0010077676339636944, 'colsample_bytree': 0.954734556572597, 'subsample': 0.8, 'learning_rate': 0.05499114408834853, 'n_estimators': 546, 'max_depth': 43, 'min_child_weight': 94, 'eta': 1.2784286267654713e-06, 'gamma': 1.6935174502873177e-05, 'grow_policy': 'depthwise'}
+params_lgbm_4_bis = {'reg_alpha': 0.15331128149569725, 'reg_lambda': 0.28560184971009756, 'colsample_bytree': 0.7, 'subsample': 0.5, 'learning_rate': 0.11430869527789024, 'max_depth': 24, 'num_leaves': 856, 'min_child_samples': 14}
+params_xgb_4_bis = {'lambda': 0.001340947773207149, 'alpha': 0.002479638085657274, 'colsample_bytree': 0.3030181981060389, 'subsample': 0.7, 'learning_rate': 0.07696248319007938, 'n_estimators': 367, 'max_depth': 31, 'min_child_weight': 72, 'eta': 3.704957186572025e-08, 'gamma': 8.44315434172209e-05, 'grow_policy': 'depthwise'}
+
+params_lgbm_5 = {'reg_alpha': 0.1420112281892889, 'reg_lambda': 0.14745955581286027, 'colsample_bytree': 0.9, 'subsample': 0.7, 'learning_rate': 0.15576554024588912, 'max_depth': 61, 'num_leaves': 483, 'min_child_samples': 10}
+params_xgb_5 = {'lambda': 4.7653031074423104, 'alpha': 0.004963619239675007, 'colsample_bytree': 0.8616303151950829, 'subsample': 0.8, 'learning_rate': 0.167247240657064, 'n_estimators': 509, 'max_depth': 31, 'min_child_weight': 73, 'eta': 0.1392993925005545, 'gamma': 1.4909263616645174e-07, 'grow_policy': 'depthwise'}
+params_lgbm_5_bis = {'reg_alpha': 0.04781362061382749, 'reg_lambda': 9.716980953182604, 'colsample_bytree': 0.9, 'subsample': 0.7, 'learning_rate': 0.14614317149730652, 'max_depth': 57, 'num_leaves': 532, 'min_child_samples': 7}
+params_xgb_5_bis = {'lambda': 4.537995153532639, 'alpha': 0.15887083612902936, 'colsample_bytree': 0.35129085402309673, 'subsample': 0.8, 'learning_rate': 0.20146110291550628, 'n_estimators': 354, 'max_depth': 27, 'min_child_weight': 91, 'eta': 0.1963402390178624, 'gamma': 4.730295821405375e-07, 'grow_policy': 'lossguide'}
+
+params_lgbm_6 = {'reg_alpha': 0.19099691249064502, 'reg_lambda': 0.3893771552082417, 'colsample_bytree': 0.6, 'subsample': 0.7, 'learning_rate': 0.10214699989265669, 'max_depth': 70, 'num_leaves': 903, 'min_child_samples': 1}
+params_xgb_6 = {'lambda': 6.198890709955999, 'alpha': 0.009212761583335095, 'colsample_bytree': 0.9364947872025757, 'subsample': 0.6, 'learning_rate': 0.0377294321765545, 'n_estimators': 458, 'max_depth': 50, 'min_child_weight': 28, 'eta': 1.0671149195024988e-08, 'gamma': 1.4697758952551594e-05, 'grow_policy': 'depthwise'}
+params_lgbm_6_bis = {'reg_alpha': 0.23451110075396234, 'reg_lambda': 0.796705483623135, 'colsample_bytree': 0.9, 'subsample': 0.4, 'learning_rate': 0.1561492653707781, 'max_depth': 67, 'num_leaves': 998, 'min_child_samples': 45}
+params_xgb_6_bis = {'lambda': 0.5705269295320163, 'alpha': 0.06713843687958011, 'colsample_bytree': 0.8718486759988152, 'subsample': 0.8, 'learning_rate': 0.07668854905667996, 'n_estimators': 582, 'max_depth': 49, 'min_child_weight': 143, 'eta': 9.055710235537663e-07, 'gamma': 1.111486195598291e-06, 'grow_policy': 'depthwise'}
+
+Preprocessing: MaxAbs for xgboost and lgbm
+Postprocessing: Prediction limited by X_train min&max
+Level1 estimator: 1-LinearSVR
+Models under the name: stacking_0-2xgboost+2lgbm_1-LinearSVR

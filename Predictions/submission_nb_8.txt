@@ -1,0 +1,84 @@
+params_1 = {
+    'lambda': 0.3643806022565838,
+    'alpha': 0.003650309466012506,
+    'colsample_bytree': 0.9640425007241273,
+    'subsample': 0.8,
+    'learning_rate': 0.052762727588106954,
+    'n_estimators': 700,
+    'max_depth': 54,
+    'min_child_weight': 96,
+    'eta': 3.119364108002744e-05,
+    'gamma': 5.177778739056542e-05,
+    'grow_policy': 'lossguide'
+}
+
+params_2 = {
+    'lambda': 0.005195058020286749,
+    'alpha': 0.15427340616771562,
+    'colsample_bytree': 0.4794118698886291,
+    'subsample': 0.7,
+    'learning_rate': 0.13969003989794868,
+    'n_estimators': 583,
+    'max_depth': 20,
+    'min_child_weight': 81,
+    'eta': 0.0006994052800675432,
+    'gamma': 4.0927842177131904e-08,
+    'grow_policy': 'depthwise'
+}
+
+params_3 = {
+    'lambda': 0.018191871915246106,
+    'alpha': 0.2397827070234125,
+    'colsample_bytree': 0.4710946041352672,
+    'subsample': 0.8,
+    'learning_rate': 0.14812785561924302,
+    'n_estimators': 688,
+    'max_depth': 32,
+    'min_child_weight': 218,
+    'eta': 6.950960910550952e-08,
+    'gamma': 2.0149702062428016e-07,
+    'grow_policy': 'lossguide'
+}
+
+params_4 = {
+    'lambda': 0.13763482520556616,
+    'alpha': 0.0010077676339636944,
+    'colsample_bytree': 0.954734556572597,
+    'subsample': 0.8,
+    'learning_rate': 0.05499114408834853,
+    'n_estimators': 546,
+    'max_depth': 43,
+    'min_child_weight': 94,
+    'eta': 1.2784286267654713e-06,
+    'gamma': 1.6935174502873177e-05,
+    'grow_policy': 'depthwise'
+}
+
+params_5 = {
+    'lambda': 4.7653031074423104,
+    'alpha': 0.004963619239675007,
+    'colsample_bytree': 0.8616303151950829,
+    'subsample': 0.8,
+    'learning_rate': 0.167247240657064,
+    'n_estimators': 509,
+    'max_depth': 31,
+    'min_child_weight': 73,
+    'eta': 0.1392993925005545,
+    'gamma': 1.4909263616645174e-07,
+    'grow_policy': 'depthwise'
+}
+
+params_6 = {
+    'lambda': 6.198890709955999,
+    'alpha': 0.009212761583335095,
+    'colsample_bytree': 0.9364947872025757,
+    'subsample': 0.6,
+    'learning_rate': 0.0377294321765545,
+    'n_estimators': 458,
+    'max_depth': 50,
+    'min_child_weight': 28,
+    'eta': 1.0671149195024988e-08,
+    'gamma': 1.4697758952551594e-05,
+    'grow_policy': 'depthwise'
+}
+

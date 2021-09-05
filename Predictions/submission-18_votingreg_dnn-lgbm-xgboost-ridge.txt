@@ -1,0 +1,5 @@
+Model1: Predictions/submission_nb_6_full_dnn.csv
+Model2: Predictions/submission_nb_9_full_maxabs-lgbm.csv
+Model3: Predictions/submission_nb_8_full_absmax-xgboost.csv
+Model4: Predictions/submission_nb_6_full_ridgecv.csv 
+Type of weighted average: Mean

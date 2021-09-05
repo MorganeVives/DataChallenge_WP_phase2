@@ -1,0 +1,16 @@
+Model1: Predictions/submission_nb_6_full_dnn.csv
+Model1 weight: 1
+
+Model2: Predictions/submission_nb_9_full_maxabs-lgbm.csv
+Model2 weight: 2
+
+Model3: Predictions/submission_nb_8_full_absmax-xgboost.csv
+Model3 weight: 1.5
+
+Model4: Predictions/submission_nb_6_full_ridgecv.csv 
+Model4 weight: 1
+
+Model5: Predictions/submission_nb_7_full_std-lgbm.csv
+Model5 weight: 1
+
+Type of weighted : Weighted
