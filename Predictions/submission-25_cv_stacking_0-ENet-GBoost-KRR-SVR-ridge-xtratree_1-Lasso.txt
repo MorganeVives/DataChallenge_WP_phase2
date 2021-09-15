@@ -1,0 +1,12 @@
+Level 0 estimators:xtratree = ExtraTreesRegressor(n_estimators=100)
+ ridge = make_pipeline(RobustScaler(), RidgeCV())
+ lasso = make_pipeline(RobustScaler(), Lasso(alpha =0.0005, random_state=1))
+ SVR = make_pipeline(RobustScaler(), LinearSVR())
+ KRR = KernelRidge(alpha=0.6, kernel='polynomial', degree=2, coef0=2.5)
+ ENet = make_pipeline(RobustScaler(), ElasticNet(alpha=0.0005, l1_ratio=.9, random_state=3))
+ GBoost = GradientBoostingRegressor(n_estimators=3000, learning_rate=0.05,
+max_depth=4, max_features='sqrt',
+min_samples_leaf=15, min_samples_split=10, 
+loss='huber', random_state =5)
+Level1 estimator: 1-Lasso
+Models under the name: cv_stacking_0-ENet-GBoost-KRR-SVR-ridge-xtratree_1-Lasso

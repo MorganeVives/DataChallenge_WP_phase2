@@ -1,0 +1,10 @@
+Model2: Predictions/submission_nb_9_full_maxabs-lgbm.csv
+Model2 weight: 1.7
+
+Model3: Predictions/submission_nb_8_full_absmax-xgboost.csv
+Model3 weight: 1.3
+
+Model3: Predictions/submission_nb_25_cv_stacking_0-ENet-GBoost-KRR-SVR-ridge-xtratree_1-Lasso.csv
+Model3 weight: 2
+
+Type of weighted : Weighted
