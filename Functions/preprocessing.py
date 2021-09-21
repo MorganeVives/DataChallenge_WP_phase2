@@ -220,7 +220,7 @@ class FeaturesPreprocessing(BaseEstimator, TransformerMixin):
 def batch_train_test_forecast(df_wp, shift, nb_index=84):
     train_wp = pd.DataFrame(columns=df_wp.columns)
     test_wp = pd.DataFrame(columns=df_wp.columns)
-    nb_batch = int((len(train_wp1)-shift)/nb_index)
+    nb_batch = int((len(df_wp)-shift)/nb_index)
     for i in range(nb_batch):
         id0 = shift + nb_index*i
         id1 = shift + (nb_index*(i+1)-1)
@@ -229,12 +229,19 @@ def batch_train_test_forecast(df_wp, shift, nb_index=84):
     return train_wp, test_wp
 
 def splitting_train_test_forecast(df_wp):
-    train_1, test_1 = batch_train_test_forecast(df_wp, 0)
-    train_2, test_2 = batch_train_test_forecast(df_wp, 12)
-    train_3, test_3 = batch_train_test_forecast(df_wp, 24)
-    train_4, test_4 = batch_train_test_forecast(df_wp, 36)
-    train_5, test_5 = batch_train_test_forecast(df_wp, 48)   
-    train_6, test_6 = batch_train_test_forecast(df_wp, 60)
-    train_7, test_7 = batch_train_test_forecast(df_wp, 72)  
-    train_8, test_8 = batch_train_test_forecast(df_wp, 84) 
-    return train_1, test_1, train_2, test_2, train_3, test_3, train_4, test_4, train_5, test_5, train_6, test_6,train_7, test_7, train_8, test_8
+    lst_train=[]
+    lst_test=[]
+    for i in range(0,96,12):
+        train,test = batch_train_test_forecast(df_wp,i)
+        lst_train.append(train)
+        lst_test.append(test)
+    return lst_train,lst_test
+    #train_1, test_1 = batch_train_test_forecast(df_wp, 0)
+    #train_2, test_2 = batch_train_test_forecast(df_wp, 12)
+    #train_3, test_3 = batch_train_test_forecast(df_wp, 24)
+    #train_4, test_4 = batch_train_test_forecast(df_wp, 36)
+    #train_5, test_5 = batch_train_test_forecast(df_wp, 48)   
+    #train_6, test_6 = batch_train_test_forecast(df_wp, 60)
+    #train_7, test_7 = batch_train_test_forecast(df_wp, 72)  
+    #train_8, test_8 = batch_train_test_forecast(df_wp, 84) 
+    #return train_1, test_1, train_2, test_2, train_3, test_3, train_4, test_4, train_5, test_5, train_6, test_6,train_7, test_7, train_8, test_8
