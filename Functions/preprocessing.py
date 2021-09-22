@@ -279,3 +279,36 @@ def splitting_train_test_forecast(df_wp):
     ]
     
     return X_train, y_train, X_test, y_test
+
+def splitting_train_test_vmd(df_wp):
+    train_1, test_1 = batch_train_test_forecast(df_wp, 0)
+    train_2, test_2 = batch_train_test_forecast(df_wp, 12)
+    train_3, test_3 = batch_train_test_forecast(df_wp, 24)
+    train_4, test_4 = batch_train_test_forecast(df_wp, 36)
+    train_5, test_5 = batch_train_test_forecast(df_wp, 48)   
+    train_6, test_6 = batch_train_test_forecast(df_wp, 60)
+    train_7, test_7 = batch_train_test_forecast(df_wp, 72)  
+    train_8, test_8 = batch_train_test_forecast(df_wp, 84)
+    y_train=[]
+    y_test=[]
+    for i in range(4):
+        y_train.append([
+            train_1['IMFwp'+str(i+1)],
+            train_2['IMFwp'+str(i+1)],
+            train_3['IMFwp'+str(i+1)],
+            train_4['IMFwp'+str(i+1)],
+            train_5['IMFwp'+str(i+1)],
+            train_6['IMFwp'+str(i+1)],
+            train_7['IMFwp'+str(i+1)],
+            train_8['IMFwp'+str(i+1)],])
+        y_test.append([
+        test_1['IMFwp'+str(i+1)],
+        test_2['IMFwp'+str(i+1)],
+        test_3['IMFwp'+str(i+1)],
+        test_4['IMFwp'+str(i+1)],  
+        test_5['IMFwp'+str(i+1)],
+        test_6['IMFwp'+str(i+1)],   
+        test_7['IMFwp'+str(i+1)],
+        test_8['IMFwp'+str(i+1)],   
+    ])
+    return y_train,y_test
