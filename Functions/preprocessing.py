@@ -229,19 +229,53 @@ def batch_train_test_forecast(df_wp, shift, nb_index=84):
     return train_wp, test_wp
 
 def splitting_train_test_forecast(df_wp):
-    lst_train=[]
-    lst_test=[]
-    for i in range(0,96,12):
-        train,test = batch_train_test_forecast(df_wp,i)
-        lst_train.append(train)
-        lst_test.append(test)
-    return lst_train,lst_test
-    #train_1, test_1 = batch_train_test_forecast(df_wp, 0)
-    #train_2, test_2 = batch_train_test_forecast(df_wp, 12)
-    #train_3, test_3 = batch_train_test_forecast(df_wp, 24)
-    #train_4, test_4 = batch_train_test_forecast(df_wp, 36)
-    #train_5, test_5 = batch_train_test_forecast(df_wp, 48)   
-    #train_6, test_6 = batch_train_test_forecast(df_wp, 60)
-    #train_7, test_7 = batch_train_test_forecast(df_wp, 72)  
-    #train_8, test_8 = batch_train_test_forecast(df_wp, 84) 
-    #return train_1, test_1, train_2, test_2, train_3, test_3, train_4, test_4, train_5, test_5, train_6, test_6,train_7, test_7, train_8, test_8
+    train_1, test_1 = batch_train_test_forecast(df_wp, 0)
+    train_2, test_2 = batch_train_test_forecast(df_wp, 12)
+    train_3, test_3 = batch_train_test_forecast(df_wp, 24)
+    train_4, test_4 = batch_train_test_forecast(df_wp, 36)
+    train_5, test_5 = batch_train_test_forecast(df_wp, 48)   
+    train_6, test_6 = batch_train_test_forecast(df_wp, 60)
+    train_7, test_7 = batch_train_test_forecast(df_wp, 72)  
+    train_8, test_8 = batch_train_test_forecast(df_wp, 84) 
+    X_train = [
+        train_1.drop('wp', axis=1),
+        train_2.drop('wp', axis=1),
+        train_3.drop('wp', axis=1),
+        train_4.drop('wp', axis=1),
+        train_5.drop('wp', axis=1),
+        train_6.drop('wp', axis=1),
+        train_7.drop('wp', axis=1),
+        train_8.drop('wp', axis=1),
+    ]
+    y_train = [
+        train_1['wp'],
+        train_2['wp'],
+        train_3['wp'],
+        train_4['wp'],  
+        train_5['wp'],
+        train_6['wp'],   
+        train_7['wp'],
+        train_8['wp'],   
+    ]
+    X_test = [
+        test_1.drop('wp', axis=1),
+        test_2.drop('wp', axis=1),
+        test_3.drop('wp', axis=1),
+        test_4.drop('wp', axis=1),
+        test_5.drop('wp', axis=1),
+        test_6.drop('wp', axis=1),
+        test_7.drop('wp', axis=1),
+        test_8.drop('wp', axis=1),
+    ]
+    y_test = [
+        test_1['wp'],
+        test_2['wp'],
+        test_3['wp'],
+        test_4['wp'],  
+        test_5['wp'],
+        test_6['wp'],   
+        test_7['wp'],
+        test_8['wp'],   
+    ]
+    
+    return X_train, y_train, X_test, y_test
